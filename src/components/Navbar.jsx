@@ -4,7 +4,6 @@ import { UserAuth } from '../context/AuthContext'
 
 const Navbar = () => {
   const { user, logOut } = UserAuth()
-  const [errorMessage, setErrorMessage] = useState('')
   const navigate = useNavigate()
 
   const handleLogout = async () => {
@@ -12,7 +11,7 @@ const Navbar = () => {
       await logOut()
       navigate('/')
     } catch (error) {
-      setErrorMessage(error?.message ?? 'Unknown Error')
+      console.log(error?.message ?? 'Unknown Error')
     }
   }
 
