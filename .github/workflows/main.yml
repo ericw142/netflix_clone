@@ -41,5 +41,3 @@ jobs:
       - name: deploy to github pages
         id: deployment
         uses: actions/deploy-pages@v1
-
-          
