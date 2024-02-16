@@ -26,7 +26,6 @@ jobs:
       - name: build app
         run: npm run build && npm run gh-pages:404
         env:
-          PUBLIC_URL: /netflix_clone
           REACT_APP_MOVIE_DB: ${{ secrets.REACT_APP_MOVIE_DB }}
           REACT_APP_FIREBASE_APIKEY: ${{ secrets.REACT_APP_FIREBASE_APIKEY }}
           REACT_APP_FIREBASE_AUTH_DOMAIN: ${{ secrets.REACT_APP_FIREBASE_AUTH_DOMAIN }}
