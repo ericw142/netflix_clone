@@ -13,7 +13,7 @@ const Login = () => {
     e.preventDefault()
     try {
         await logIn(email, password)
-        navigate('/')
+        navigate('/netflix_clone')
     } catch (error) {
         setErrorMessage(error?.message ?? 'Unknown Error')
     }

@@ -9,7 +9,7 @@ const Navbar = () => {
   const handleLogout = async () => {
     try {
       await logOut()
-      navigate('/')
+      navigate('/netflix_clone')
     } catch (error) {
       console.log(error?.message ?? 'Unknown Error')
     }
@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <div className='flex items-center justify-between p-4 z-[100] w-full absolute'>
-      <Link to="/">
+      <Link to="/netflix_clone">
         <h1 className='text-red-600 text-4xl font-bold cursor-pointer'>NETFLIXCLONE</h1>
       </Link>
       {user?.email ? (

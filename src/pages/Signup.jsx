@@ -13,7 +13,7 @@ const Signup = () => {
         e.preventDefault()
         try {
             await signUp(email, password)
-            navigate('/')
+            navigate('/netflix_clone')
         } catch (error) {
             setErrorMessage(error?.message ?? 'Unknown Error')
         }
